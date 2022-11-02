@@ -21,7 +21,18 @@ const handleLocation = async () => {
     document.getElementById("main-page").innerHTML = html;
 };
 
-window.onpopstate = handleLocation;
-window.route = route;
+//window.onpopstate = handleLocation;
+//window.route = route;
 
-handleLocation();
+//handleLocation();
+
+var btns = document.getElementsByClassName("deactive");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if(current.length>0){
+      current[0].className = current[0].className.replace("active", "deactive");
+  }
+  this.className = "active";
+  });
+}
