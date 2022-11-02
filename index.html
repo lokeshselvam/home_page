@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Sharp">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <h2>BAN<span class="danger">KER</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="./Home/dashboard" class="active" onclick="route()">
+                    <span class="material-symbols-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="./Home/account" onclick="route()">
+                    <span class="material-symbols-sharp">account_balance_wallet</span>
+                    <h3>Account Overview</h3>
+                </a>
+                <a href="./Home/profile" onclick="route()">
+                    <span class="material-symbols-sharp">account_circle</span>
+                    <h3>Profile Overview</h3>
+                </a>
+                <a href="./Home/transfer" onclick="route()">
+                    <span class="material-symbols-sharp">paid</span>
+                    <h3>Money Transfer</h3>
+                </a>
+                <a href="./Home/report" onclick="route()">
+                    <span class="material-symbols-sharp">receipt_long</span>
+                    <h3>Report</h3>
+                </a>
+                <a href="./Home" onclick="route()">
+                    <span class="material-symbols-sharp">logout</span>
+                    <h3>LOG OUT</h3>
+                </a>
+            </div>
+        </aside>
+        <div id="main-page"><h1>Welocome Lokesh:)</h1></div>
+    </div>
+    <script src="route.js"></script>
+</body>
+</html>
